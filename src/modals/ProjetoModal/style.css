@@ -1,0 +1,7 @@
+.PMContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    z-index: 9;
+}

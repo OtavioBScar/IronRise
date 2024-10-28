@@ -1,13 +1,16 @@
 import { useState } from 'react'
 
 import './App.css'
+import ProjetoModal from './modals/ProjetoModal';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [show, setShow] = useState(false);
 
   return (
     <>
-      
+        Iniciar projeto
+        <button onClick={() => setShow(!show)}>Botão</button>
+        <ProjetoModal show={show} setShow={setShow}/>
     </>
   )
 }
